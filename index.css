@@ -7,6 +7,8 @@ body {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(#7e9cff, #11a0ff);
+    display:flex;
+    flex-direction: column;
    }
 
 #calculator {
@@ -16,6 +18,11 @@ body {
     box-shadow: 0 0 1000px 3px #fff;
 }
 
+#title{
+color: #000;
+font-family: 'Courier New', Courier, monospace;
+
+}
 
 #display {
     display: flex;
