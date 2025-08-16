@@ -12,7 +12,7 @@ arr.forEach(button => {
         if (value == '=') {
             try {
                 string = eval(string);
-                resultdisplay.innerHTML = "= "+string;
+                resultdisplay.innerHTML = "= "+ Math.round(string * 10000)/10000;
                 console.log("result" + string);
             } catch (err) {
                 resultdisplay.innerHTML = "Error"
@@ -21,7 +21,7 @@ arr.forEach(button => {
         else if (value == 'Ac') {
             string = "";
             input.value = string
-            resultdisplay.innerHTML = string
+            resultdisplay.innerHTML = string;
         }
         else {
             string += value;
